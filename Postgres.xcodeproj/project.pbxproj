@@ -380,8 +380,11 @@
 					};
 					F8973A071538846600EAB41E = {
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
 							com.apple.Sandbox = {
-								enabled = 0;
+								enabled = 1;
 							};
 						};
 					};
@@ -675,6 +678,7 @@
 		F8973A271538846600EAB41E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Postgres/Postgres.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_RESOURCE_RULES_PATH = $PROJECT_DIR/Postgres/ResourceRules.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -690,6 +694,7 @@
 		F8973A281538846600EAB41E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Postgres/Postgres.entitlements;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				CODE_SIGN_RESOURCE_RULES_PATH = $PROJECT_DIR/Postgres/ResourceRules.plist;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
